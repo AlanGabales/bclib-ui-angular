@@ -1,0 +1,146 @@
+<!-- <mat-card>
+    <mat-card-header
+      ><h2 style="margin-top: 1%; margin-left: 1%">
+        {{ title }}
+      </h2></mat-card-header
+    >
+    <mat-card-content>
+        <div class="main-card mb-3 card">
+            <div class="card-body bg-success w-10 ">
+                <div class="position-relative row form-group bg-info ">
+                    <label class="col-sm-2 col-form-label" for="exampleEmail">Accession</label>
+                    <div class="col-sm-5 mt-1">
+                        {{book?.accession?.code}}
+                    </div>
+                </div>
+            </div>
+            <div class="card-body  w-10">
+                <div class="position-relative row form-group">
+                    <label class="col-sm-2 col-form-label" for="exampleEmail">Category</label>
+                    <div class="col-sm-5 mt-1">
+                        {{book?.category?.code}}
+                    </div>
+                </div>
+            </div>
+            <div class="card-body   w-10">
+                <div class="position-relative row form-group">
+                    <label class="col-sm-2 col-form-label" for="exampleEmail">Accession</label>
+                    <div class="col-sm-5 mt-1">
+                        {{book?.accession?.code}}
+                    </div>
+                </div>
+            </div>
+            <div class="card-body">
+                <div class="position-relative row form-group">
+                    <label class="col-sm-2 col-form-label" for="exampleEmail">Category</label>
+                    <div class="col-sm-5 mt-1">
+                        {{book?.category?.code}}
+                    </div>
+                </div>
+            </div>
+            <div class="card-body">
+                <div class="position-relative row form-group">
+                    <label class="col-sm-2 col-form-label" for="exampleEmail">Accession</label>
+                    <div class="col-sm-5 mt-1">
+                        {{book?.accession?.code}}
+                    </div>
+                </div>
+            </div>
+            <div class="card-body">
+                <div class="position-relative row form-group">
+                    <label class="col-sm-2 col-form-label" for="exampleEmail">Category</label>
+                    <div class="col-sm-5 mt-1">
+                        {{book?.category?.code}}
+                    </div>
+                </div>
+            </div>
+            <div class="card-body">
+                <div class="position-relative row form-group">
+                    <label class="col-sm-2 col-form-label" for="exampleEmail">Accession</label>
+                    <div class="col-sm-5 mt-1">
+                        {{book?.accession?.code}}
+                    </div>
+                </div>
+            </div>
+            <div class="card-body">
+                <div class="position-relative row form-group">
+                    <label class="col-sm-2 col-form-label" for="exampleEmail">Category</label>
+                    <div class="col-sm-5 mt-1">
+                        {{book?.category?.code}}
+                    </div>
+                </div>
+            </div>
+        </div>
+    </mat-card-content>
+    <mat-card-footer>
+      <div style="margin: 2%; text-align: right">
+        <a routerLink="/books" class="btn btn-link">Cancel</a>
+      </div>
+    </mat-card-footer>
+</mat-card>
+ -->
+<div class="container pt-4">
+    <div class="row g-2 rounded shadow">
+        <h3 class="p-3">{{ title }}</h3>
+      <div class="col-6">
+        <div class="p-3 ">Category: <span class="p-3">{{book?.category?.name}}</span></div>
+      </div>
+      <div class="col-6">
+        <div class="p-3 ">Accession: <span class="p-3">{{book?.accession?.name}}</span></div>
+      </div>
+      <div class="col-6">
+        <div class="p-3 ">Author: <span class="p-3">{{book?.author?.full_name}}</span></div>
+      </div>
+      <div class="col-6">
+        <div class="p-3 ">Number: <span class="p-3">{{book?.number}}</span></div>
+      </div>
+      <div class="col-6">
+        <div class="p-3 ">Classification: <span class="p-3">{{book?.classification}}</span></div>
+      </div>
+      <div class="col-6">
+        <div class="p-3 ">Accession: <span class="p-3">{{book?.accession?.name}}</span></div>
+      </div>
+      <div class="col-6">
+        <div class="p-3 ">Title: <span class="p-3">{{book?.title}}</span></div>
+      </div>
+      <div class="col-6">
+        <div class="p-3 ">Quantity: <span class="p-3">{{book?.quantity}}</span></div>
+      </div>
+      <div class="col-6">
+        <div class="p-3 ">Edition: <span class="p-3">{{book?.edition}}</span></div>
+      </div>
+      <div class="col-6">
+        <div class="p-3 ">Pages: <span class="p-3">{{book?.pages}}</span></div>
+      </div>
+      <div class="col-6">
+        <div class="p-3 ">Source of Fund: <span class="p-3">{{book?.source_of_fund}}</span></div>
+      </div>
+      <div class="col-6">
+        <div class="p-3 ">Price: <span class="p-3">{{book?.cost_price}}</span></div>
+      </div>
+      <div class="col-6">
+        <div class="p-3 ">Year: <span class="p-3">{{book?.year}}</span></div>
+      </div>
+      <div class="col-6">
+        <div class="p-3 ">Status: <span class="p-3">{{book?.book_status}}</span></div>
+      </div>
+      <div class="col-6">
+        <div class="p-3 ">remarks: <span class="p-3">{{book?.remarks}}</span></div>
+      </div>
+      <div class="col-6">
+        <div class="p-3 ">Created_at: <span class="p-3">{{book?.created_at | date: 'MM/dd/yyyy'}}</span></div>
+      </div>
+      <div class="col-6">
+        <div class="p-3 ">Updated At: <span class="p-3">{{book?.updated_at | date: 'MM/dd/yyyy'}}</span></div>
+      </div>
+      <!-- <div class="col-6">
+        <div class="p-3 ">created_by: <span class="p-3">{{book?.created_by | date: 'MM/dd/yyyy'}}</span></div> 
+      </div> -->
+      <mat-card-footer>
+        <div style="margin: 2%; text-align: right">
+          <a routerLink="/books" class="btn btn-link">Cancel</a>
+        </div>
+      </mat-card-footer>
+    </div>
+    
+  </div>

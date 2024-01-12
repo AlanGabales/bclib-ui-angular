@@ -1,0 +1,130 @@
+<!-- <mat-card>
+    <mat-card-header
+      ><h2 style="margin-top: 1%; margin-left: 1%">
+        {{ title }}
+      </h2></mat-card-header
+    >
+    <mat-card-content>
+        <div class="main-card mb-3 card">
+            <div class="card-body bg-success w-10 ">
+                <div class="position-relative row form-group bg-info ">
+                    <label class="col-sm-2 col-form-label" for="exampleEmail">Accession</label>
+                    <div class="col-sm-5 mt-1">
+                        {{category?.accession?.code}}
+                    </div>
+                </div>
+            </div>
+            <div class="card-body  w-10">
+                <div class="position-relative row form-group">
+                    <label class="col-sm-2 col-form-label" for="exampleEmail">Category</label>
+                    <div class="col-sm-5 mt-1">
+                        {{category?.category?.code}}
+                    </div>
+                </div>
+            </div>
+            <div class="card-body   w-10">
+                <div class="position-relative row form-group">
+                    <label class="col-sm-2 col-form-label" for="exampleEmail">Accession</label>
+                    <div class="col-sm-5 mt-1">
+                        {{category?.accession?.code}}
+                    </div>
+                </div>
+            </div>
+            <div class="card-body">
+                <div class="position-relative row form-group">
+                    <label class="col-sm-2 col-form-label" for="exampleEmail">Category</label>
+                    <div class="col-sm-5 mt-1">
+                        {{category?.category?.code}}
+                    </div>
+                </div>
+            </div>
+            <div class="card-body">
+                <div class="position-relative row form-group">
+                    <label class="col-sm-2 col-form-label" for="exampleEmail">Accession</label>
+                    <div class="col-sm-5 mt-1">
+                        {{category?.accession?.code}}
+                    </div>
+                </div>
+            </div>
+            <div class="card-body">
+                <div class="position-relative row form-group">
+                    <label class="col-sm-2 col-form-label" for="exampleEmail">Category</label>
+                    <div class="col-sm-5 mt-1">
+                        {{category?.category?.code}}
+                    </div>
+                </div>
+            </div>
+            <div class="card-body">
+                <div class="position-relative row form-group">
+                    <label class="col-sm-2 col-form-label" for="exampleEmail">Accession</label>
+                    <div class="col-sm-5 mt-1">
+                        {{category?.accession?.code}}
+                    </div>
+                </div>
+            </div>
+            <div class="card-body">
+                <div class="position-relative row form-group">
+                    <label class="col-sm-2 col-form-label" for="exampleEmail">Category</label>
+                    <div class="col-sm-5 mt-1">
+                        {{category?.category?.code}}
+                    </div>
+                </div>
+            </div>
+        </div>
+    </mat-card-content>
+    <mat-card-footer>
+      <div style="margin: 2%; text-align: right">
+        <a routerLink="/categorys" class="btn btn-link">Cancel</a>
+      </div>
+    </mat-card-footer>
+</mat-card>
+ -->
+<div class="container pt-4">
+    <div class="row g-2 rounded shadow">
+        <h3 class="p-3">{{ title }}</h3>
+      <div class="col-12">
+        <div class="p-3 ">Name: <span class="p-3">{{category?.name}}</span></div>
+      </div>
+      <div class="col-12">
+        <div class="p-3 ">Code: <span class="p-3">{{category?.code}}</span></div>
+      </div>
+      <div class="col-12">
+        <div class="p-3 ">status: <span class="p-3">{{category?.status}}</span></div>
+        
+       </div>
+       <div class="col-12">
+        <div class="p-3 ">Created_at: <span class="p-3">{{category?.created_at | date: 'MM/dd/yyyy'}}</span></div>
+      </div> 
+      <div class="col-12">
+        <div class="p-3 ">Updated At: <span class="p-3">{{category?.updated_at | date: 'MM/dd/yyyy'}}</span></div>
+      </div>
+       <!--
+      <div class="col-6">
+        <div class="p-3 ">Source of Fund: <span class="p-3">{{category?.source_of_fund}}</span></div>
+      </div>
+      <div class="col-6">
+        <div class="p-3 ">Price: <span class="p-3">{{category?.cost_price}}</span></div>
+      </div>
+      <div class="col-6">
+        <div class="p-3 ">Year: <span class="p-3">{{category?.year}}</span></div>
+      </div>
+      <div class="col-6">
+        <div class="p-3 ">remarks: <span class="p-3">{{category?.remarks}}</span></div>
+      </div> -->
+      <!-- <div class="col-6">
+        <div class="p-3 ">Created_at: <span class="p-3">{{category?.created_at | date: 'MM/dd/yyyy'}}</span></div>
+      </div>
+      <div class="col-6">
+        <div class="p-3 ">Updated At: <span class="p-3">{{category?.updated_at | date: 'MM/dd/yyyy'}}</span></div>
+      </div>
+      <div class="col-6">
+        <div class="p-3 ">created_by: <span class="p-3">{{category?.created_by | date: 'MM/dd/yyyy'}}</span></div> 
+      </div>-->
+      <mat-card-footer>
+        <div style="margin: 2%; text-align: right">
+          <a routerLink="/categorys" class="btn btn-link">Cancel</a>
+        </div>
+      </mat-card-footer>
+    </div>
+    
+  </div>
